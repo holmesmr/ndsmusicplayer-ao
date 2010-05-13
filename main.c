@@ -145,7 +145,7 @@ int main(int argv, char *argc[])
 		return -1;
 	}	
 
-	printf("Press ESC or Q to stop. / or p = previous song, * or n = next song\n\n", argc[1]);
+	printf("Press ESC or Q to stop. p = previous song, n = next song\n\n", argc[1]);
 
 	if (load_file(argc[1]) < 0)
 	{
@@ -179,7 +179,7 @@ int main(int argv, char *argc[])
 
 		// Added the ability to press the n key to goto the
 		// next song
-		if ((ch == '*') && (ch == 'n') && ((song+1) < argv))
+		if ((ch == 'n') && ((song+1) < argv))
 		{
 			xsf_term();
 			m1sdr_Exit();
@@ -197,7 +197,7 @@ int main(int argv, char *argc[])
 			}
 		}
 
-		if ((ch == '/') && (ch == 'p') && (song > 1))
+		if ((ch == 'p') && (song > 1))
 		{
 			xsf_term();
 			m1sdr_Exit();
