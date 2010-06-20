@@ -136,7 +136,7 @@ int main(int argv, char *argc[])
 	char ch = 0;
 	int song;
 
-	printf("VIO2SF Linux player version 1.1.1 (vio2sf 0.15)\n\n");
+	printf("VIO2SF Linux player version 1.5 (vio2sf 0.15)\n\n");
 
 	// check if an argument was given
 	if (argv < 2)
