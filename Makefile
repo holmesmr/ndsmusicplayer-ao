@@ -54,4 +54,5 @@ clean:
 
 install:
 	@echo Installing...
+	@echo YOU MUST RUN THIS AS ROOT!
 	@install -d -v $(EXE) /usr/local/bin/
