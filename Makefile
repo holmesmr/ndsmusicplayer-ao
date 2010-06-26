@@ -41,7 +41,7 @@ OBJS += vio2sf/zlib/inftrees.o vio2sf/zlib/uncompr.o vio2sf/zlib/zutil.o
 %.o: %.cpp
 	@echo Compiling $<...
 	@$(CC) $(CFLAGS) $(CPPFLAGS) $< -o $@
-	
+
 all: $(EXE)
 
 # link the commandline exe
@@ -52,3 +52,6 @@ $(EXE): $(OBJS)
 clean:
 	-@rm -f $(OBJS) $(EXE)
 
+install:
+	@echo Installing...
+	@install -d -v $(EXE) /usr/local/bin/
