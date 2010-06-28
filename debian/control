@@ -1,0 +1,7 @@
+Source: ndsmusicplayer
+Section: games
+Build-Depends: 
+Standards-Version: 3.8.4.0
+Maintainer: Jesse N. Richardson <richardson183@bellsouth.net>
+Priority: optional
+
