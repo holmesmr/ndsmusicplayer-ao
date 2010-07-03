@@ -54,4 +54,4 @@ clean:
 
 install:
 	@echo Installing...
-	@cp -v $(EXE) /usr/local/bin/
+	@cp -v $(EXE) /usr/bin/
