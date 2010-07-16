@@ -1,7 +1,15 @@
 Source: ndsmusicplayer
 Section: games
-Build-Depends: 
+Homepage: http://launchpad.net/ndsmusicplayer
+Build-Depends: libao-dev, libasound2-dev, build-essential
 Standards-Version: 3.8.4.0
 Maintainer: Jesse N. Richardson <richardson183@bellsouth.net>
 Priority: optional
 
+
+Package: ndsmusicplayer
+Architecture: i386 amd64
+Depends: libasound2 libao
+Description: A Nintendo DS Music Player
+ This is the Nintendo DS Music Player, it plays mini2sf files. Mini2sf files
+ are ripped from the actual NDS ROM's.
