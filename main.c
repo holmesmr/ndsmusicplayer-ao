@@ -15,8 +15,8 @@
 #include "corlett.h"
 #include "vio2sf/vio2sf.h"
 
-static uint8 *buffer; 		// buffer containing 2sf file
-static uint32 size;		// size of buffer
+static uint8 *buffer; // buffer containing 2sf file
+static uint32 size;   // size of buffer
 static corlett_t *c = NULL;
 
 char *xsf_tagget(const char *tag, const char *pData, int dwSize);
@@ -117,7 +117,7 @@ int load_file(char *name)
 
 	if ((c != NULL) && (c->inf_title != NULL))
 	{
-		printf("Playing \"%s\" by %s from %s.  Copyright %s %s.\n", c->inf_title, c->inf_artist, c->inf_game, c->inf_copy, c->inf_year);
+	  printf("Playing \"%s\" by %s from %s.  Copyright %s %s.\nFilename: %s\n", c->inf_title, c->inf_artist, c->inf_game, c->inf_copy, c->inf_year, name);
 	}
 	else
 	{
@@ -136,14 +136,14 @@ int main(int argv, char *argc[])
 	char ch = 0;
 	int song;
 
-	printf("VIO2SF Linux player version 1.5 (vio2sf 0.15)\n\n");
+	printf("VIO2SF Linux player version 2.0 (vio2sf 0.15)\n\n");
 
 	// check if an argument was given
 	if (argv < 2)
 	{
 		printf("Error: must specify a filename or names!\n");
 		return -1;
-	}	
+	}
 
 	printf("Press ESC or Q to stop. p = previous song, n = next song\n\n", argc[1]);
 
@@ -190,7 +190,7 @@ int main(int argv, char *argc[])
 			}
 			free(buffer);
 			song++;
-			
+
 			if (load_file(argc[song]) < 0)
 			{
 				ch = 27;
@@ -208,13 +208,13 @@ int main(int argv, char *argc[])
 			}
 			free(buffer);
 			song--;
-			
+
 			if (load_file(argc[song]) < 0)
 			{
 				ch = 27;
 			}
 		}
-	}		
+	}
 
 	xsf_term();
 
