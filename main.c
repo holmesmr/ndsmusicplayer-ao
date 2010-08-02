@@ -100,14 +100,14 @@ int load_file(char *name)
 	// init our *SF engine so we can get tags
 	if (corlett_decode(buffer, size, &filedata, &file_len, &c) != AO_SUCCESS)
 	{
-		printf("Unable to process tags\n");
+		printf("ERROR: WTF!? I can't read these tags!\n");
 		return -1;
 	}
 	free(filedata);	// we don't use this
 
  	if (xsf_start(buffer, size) != XSF_TRUE)
 	{
-		printf("ERROR: vio2sf rejected the file!\n");
+		printf("ERROR: WTF!? I can't read this!\n");
 		return -1;
 	}
 

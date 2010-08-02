@@ -33,3 +33,42 @@ OBJS += vio2sf/desmume/NDSSystem.o vio2sf/desmume/SPU.o vio2sf/desmume/thumb_ins
 OBJS += vio2sf/zlib/adler32.o vio2sf/zlib/crc32.o vio2sf/zlib/infback.o vio2sf/zlib/inffast.o vio2sf/zlib/inflate.o
 OBJS += vio2sf/zlib/inftrees.o vio2sf/zlib/uncompr.o vio2sf/zlib/zutil.o
 
+# Main Building Rules
+%.o: %.c
+	@echo Compiling $<...
+	@$(CC) $(CFLAGS) $< -o $@
+
+%.o: %.cpp
+	@echo Compiling $<...
+	@$(CC) $(CFLAGS) $(CPPFLAGS) $< -o $@
+
+all: $(EXE)
+
+$(EXE): $(OBJS)
+	@echo Linking $@...
+	@$(CPP) -g -s -o $(EXE) $^ $(LIBS)
+
+
+
+
+## Debian Build Rules
+config.status: Makefile
+	dh_testdir
+
+build: build-stamp
+
+build-stamp: Makefile
+	dh_testdir
+	$(EXE)
+
+clean:
+	dh_testdir
+	dh_testroot
+	-@rm -f $(OBJS) $(EXE)
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_installdirs
+	@echo Installing...
+	@cp -v $(EXE) /usr/bin/
