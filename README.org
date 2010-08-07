@@ -1,0 +1,13 @@
+* NDS Music Player Readme
+** How to Build NDS Music Player
+*** Required Packages:
+**** Bzr
+***** If you branched this from the launchpad repo, then that means you've already got bzr
+**** libasound2-dev
+**** libao-dev
+**** build-essentials 
+*** Compiling it:
+**** All you have to do is run make to compile it
+*** To Install it:
+**** Run this in the ndsmusicplayer's folder:
+***** sudo make install
