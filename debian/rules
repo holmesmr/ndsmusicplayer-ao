@@ -59,7 +59,7 @@ build: build-stamp
 
 build-stamp: Makefile
 	dh_testdir
-	$(EXE)
+	all
 
 clean:
 	dh_testdir
