@@ -55,6 +55,8 @@ $(EXE): $(OBJS)
 config.status: Makefile
 	dh_testdir
 
+binary: install
+
 build: build-stamp
 
 build-stamp: Makefile
