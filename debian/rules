@@ -73,4 +73,5 @@ install: build
 	dh_testroot
 	dh_installdirs
 	@echo Installing...
-	@cp -v $(EXE) /usr/bin/
+#	@cp -v $(EXE) /usr/bin/
+	make prefix=$(CURDIR)/debian/vio2play/usr
