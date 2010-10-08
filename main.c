@@ -21,7 +21,7 @@ static corlett_t *c = NULL;
 
 char *xsf_tagget(const char *tag, const char *pData, int dwSize);
 
-#define BOLD() printf("%c[36m", 27);
+#define BOLD() printf("%c[34m", 27);
 #define NORMAL() printf("%c[0m", 27);
 
 /* ao_get_lib: called to load secondary files */
@@ -146,7 +146,9 @@ int main(int argv, char *argc[])
   // check if an argument was given
   if (argv < 2)
     {
+      BOLD();
       printf("Error: must specify a filename or names!\n");
+      NORMAL();
       return -1;
     }
 
