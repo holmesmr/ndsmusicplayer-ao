@@ -1,5 +1,6 @@
 /*
   Linux 2SF player - main program
+  Rewritten by Jesse N. Richardson
 
 */
 
@@ -21,6 +22,7 @@ static corlett_t *c = NULL;
 
 char *xsf_tagget(const char *tag, const char *pData, int dwSize);
 
+// Color Stuff:
 #define BOLD() printf("%c[34m", 27);
 #define NORMAL() printf("%c[0m", 27);
 
