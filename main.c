@@ -1,3 +1,4 @@
+
 /*
   Linux 2SF player - main program
   Rewritten by Jesse N. Richardson
@@ -23,8 +24,9 @@ static corlett_t *c = NULL;
 char *xsf_tagget(const char *tag, const char *pData, int dwSize);
 
 // Color Stuff:
-#define BOLD() printf("%c[34m", 27);
+#define BOLD() printf("%c[1;34m", 27);
 #define NORMAL() printf("%c[0m", 27);
+#define RED() printf("%c[1;31m",27);
 
 /* ao_get_lib: called to load secondary files */
 int xsf_get_lib(char *filename, void **buffer, unsigned int *length)
@@ -36,7 +38,9 @@ int xsf_get_lib(char *filename, void **buffer, unsigned int *length)
   auxfile = fopen(filename, "rb");
   if (!auxfile)
     {
+      RED();
       printf("Unable to find auxiliary file %s\n", filename);
+      NORMAL();
       return AO_FAIL;
     }
 
@@ -49,7 +53,9 @@ int xsf_get_lib(char *filename, void **buffer, unsigned int *length)
   if (!filebuf)
     {
       fclose(auxfile);
+      RED();
       printf("ERROR: could not allocate %d bytes of memory\n", size);
+      NORMAL();
       return AO_FAIL;
     }
 
@@ -79,7 +85,9 @@ int load_file(char *name)
 
   if (!file)
     {
+      RED();
       printf("ERROR: could not open file %s\n", name);
+      NORMAL();
       return -1;
     }
 
@@ -94,7 +102,9 @@ int load_file(char *name)
   if (!buffer)
     {
       fclose(file);
+      RED();
       printf("ERROR: could not allocate %d bytes of memory\n", size);
+      NORMAL();
       return -1;
     }
 
@@ -105,14 +115,18 @@ int load_file(char *name)
   // init our *SF engine so we can get tags
   if (corlett_decode(buffer, size, &filedata, &file_len, &c) != AO_SUCCESS)
     {
+      RED();
       printf("ERROR: WTF!? I can't read these tags!\n");
+      NORMAL();
       return -1;
     }
   free(filedata);	// we don't use this
 
   if (xsf_start(buffer, size) != XSF_TRUE)
     {
+      RED();
       printf("ERROR: WTF!? I can't read this!\n");
+      NORMAL();
       return -1;
     }
 
@@ -128,7 +142,9 @@ int load_file(char *name)
     }
   else
     {
+      BOLD();
       printf("Playing %s\n", name);
+      NORMAL();
     }
 
   return 0;
@@ -143,12 +159,12 @@ int main(int argv, char *argc[])
   char ch = 0;
   int song;
 
-  printf("VIO2SF Linux player version 2.0 (vio2sf 0.15)\n\n");
+  printf("VIO2SF Linux player version 2.5 (vio2sf 0.15)\n\n");
 
   // check if an argument was given
   if (argv < 2)
     {
-      BOLD();
+      RED();
       printf("Error: must specify a filename or names!\n");
       NORMAL();
       return -1;
