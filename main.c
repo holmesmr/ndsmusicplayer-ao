@@ -27,6 +27,8 @@ char *xsf_tagget(const char *tag, const char *pData, int dwSize);
 #define BOLD() printf("%c[1;34m", 27);
 #define NORMAL() printf("%c[0m", 27);
 #define RED() printf("%c[1;31m",27);
+// Green:
+// #define GREEN() printf("")
 
 /* ao_get_lib: called to load secondary files */
 int xsf_get_lib(char *filename, void **buffer, unsigned int *length)
