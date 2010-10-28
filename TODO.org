@@ -1,0 +1,6 @@
+* Suggestions/Things to do
+** TODO Add a Pause function or some sort.
+** TODO Bug: Control Interuppting vio2play Bug
+Pressing Control+c while vio2play is playing a music file will cause
+the terminal text to remain blue after the vio2play process has
+recieved the SIGINT signal.
