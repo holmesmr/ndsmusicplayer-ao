@@ -157,7 +157,7 @@ INT16 m1sdr_Init(int sample_rate)
     {
       perror("/dev/dsp");
       RED();
-      printf("ERROR: Not able to stream music to the /dev/dsp device");
+      printf("ERROR: Not able to stream music to the /dev/dsp device\n");
       NORMAL();
 
       audiofd = open("/dev/dsp1", O_WRONLY, 0);
@@ -165,7 +165,8 @@ INT16 m1sdr_Init(int sample_rate)
       if (audiofd == -1)
 	{
 	  perror("/dev/dsp1");
-	  return(0);
+	  //return(0);
+	  return -1;
 	}
     }
 
