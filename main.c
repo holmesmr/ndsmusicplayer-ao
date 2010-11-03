@@ -17,18 +17,15 @@
 #include "corlett.h"
 #include "vio2sf/vio2sf.h"
 
+// Color Codes library file
+#include "../color.h"
+
 static uint8 *buffer; // buffer containing 2sf file
 static uint32 size;   // size of buffer
 static corlett_t *c = NULL;
 
 char *xsf_tagget(const char *tag, const char *pData, int dwSize);
 
-// Color Stuff:
-#define BOLD() printf("%c[1;34m", 27);
-#define NORMAL() printf("%c[0m", 27);
-#define RED() printf("%c[1;31m",27);
-// Green:
-// #define GREEN() printf("")
 
 /* ao_get_lib: called to load secondary files */
 int xsf_get_lib(char *filename, void **buffer, unsigned int *length)
@@ -161,7 +158,7 @@ int main(int argv, char *argc[])
   char ch = 0;
   int song;
 
-  printf("VIO2SF Linux player version 2.5 (vio2sf 0.15)\n\n");
+  printf("VIO2SF Linux player version 2.6 (vio2sf 0.15)\n\n");
 
   // check if an argument was given
   if (argv < 2)

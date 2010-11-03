@@ -37,6 +37,9 @@
 #include "ao.h"
 #include "oss.h"
 
+// Color Code Library
+#include "../color.h"
+
 #define LOG_WAVE 	(0)
 #define VALGRIND 	(0)
 
@@ -153,6 +156,9 @@ INT16 m1sdr_Init(int sample_rate)
   if (audiofd == -1)
     {
       perror("/dev/dsp");
+      RED();
+      printf("ERROR: Not able to stream music to the /dev/dsp device");
+      NORMAL();
 
       audiofd = open("/dev/dsp1", O_WRONLY, 0);
 
