@@ -1,4 +1,3 @@
-
 /*
   Linux 2SF player - main program
   Rewritten by Jesse N. Richardson

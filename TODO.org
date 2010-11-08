@@ -5,4 +5,9 @@ Pressing Control+c while vio2play is playing a music file will cause
 the terminal text to remain blue after the vio2play process has
 recieved the SIGINT signal.
 
-** TODO Add the Color Green into the main program's announcement/version section
+** TODO Add all the colors to the color.h file[fn:1]
+*** TODO Add the Color Green into the main program's announcement/version section
+
+* Footnotes
+
+[fn:1] See the bookmarked web page on Firefox for more info.
