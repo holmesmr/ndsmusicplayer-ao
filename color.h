@@ -33,4 +33,7 @@
 #define BOLD() printf("%c[1;34m", 27);
 #define NORMAL() printf("%c[0m", 27);
 #define RED() printf("%c[1;31m",27);
-//#define GREEN() printf("%c[1;")
+#define GREEN() printf("%c[1;32m",27);
+#define YELLOW() printf("%c[1;33m",27);
+#define CYAN() printf("%c[1;36m",27);
+#define MAGENTA() printf("%c[1;35m",27);

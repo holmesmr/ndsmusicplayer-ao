@@ -157,8 +157,9 @@ int main(int argv, char *argc[])
   char ch = 0;
   int song;
 
+  MAGENTA();
   printf("VIO2SF Linux player version 2.6 (vio2sf 0.15)\n\n");
-
+  NORMAL();
   // check if an argument was given
   if (argv < 2)
     {
@@ -168,7 +169,9 @@ int main(int argv, char *argc[])
       return -1;
     }
 
+  GREEN();
   printf("Press ESC or Q to stop. p = previous song, n = next song\n\n", argc[1]);
+  NORMAL();
 
   if (load_file(argc[1]) < 0)
     {
