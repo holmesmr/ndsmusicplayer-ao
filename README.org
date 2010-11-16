@@ -11,8 +11,6 @@
 *** To Install it:
 **** Run this in the ndsmusicplayer's folder:
 ***** sudo make install
-
-
 * *IMPORTANT! READ THIS!*
 ** If you are using Ubuntu 10.10
 If your using Ubuntu 10.10, or if you get errors about /dev/dsp not

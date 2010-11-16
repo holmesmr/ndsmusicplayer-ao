@@ -40,8 +40,8 @@
 // Color Code Library
 #include "../color.h"
 
-#define LOG_WAVE 	(0)
-#define VALGRIND 	(0)
+#define LOG_WAVE (0)
+#define VALGRIND (0)
 
 #define NUM_FRAGS_BROKEN    (8)
 #define NUM_FRAGS_NORMAL    (4)
