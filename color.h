@@ -30,7 +30,7 @@
 
 
 // Color Stuff:
-
+#define NORMAL() printf("%c[0m", 27);
 /*
   All of the following
   colors are bold, I'm going to also write the non-bolded
