@@ -1,7 +1,9 @@
 Source: ndsmusicplayer
 Section: games
 Homepage: http://launchpad.net/ndsmusicplayer
-Build-Depends: libasound2-dev libao-dev build-essential
+Build-Depends: libasound2-dev,
+	       libao-dev,
+	       build-essential
 Standards-Version: 3.8.4.0
 Maintainer: Jesse N. Richardson <richardson183@bellsouth.net>
 Priority: optional
