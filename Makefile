@@ -55,7 +55,5 @@ clean:
 	@echo "Done."
 
 install:
-	@echo "Rebuilding, if needed..."
-	@$(EXE)
 	@echo "Installing..."
 	@cp -v $(EXE) /usr/bin/
