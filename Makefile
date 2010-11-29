@@ -35,23 +35,27 @@ OBJS += vio2sf/zlib/inftrees.o vio2sf/zlib/uncompr.o vio2sf/zlib/zutil.o
 
 # build rules
 %.o: %.c
-	@echo Compiling $<...
+	@echo "Compiling $<..."
 	@$(CC) $(CFLAGS) $< -o $@
 
 %.o: %.cpp
-	@echo Compiling $<...
+	@echo "Compiling $<..."
 	@$(CC) $(CFLAGS) $(CPPFLAGS) $< -o $@
 
 all: $(EXE)
 
 # link the commandline exe
 $(EXE): $(OBJS)
-	@echo Linking $@...
+	@echo "Linking $@..."
 	@$(CPP) -g -s -o $(EXE) $^ $(LIBS)
 
 clean:
+	@echo "Cleaning up..."
 	-@rm -f $(OBJS) $(EXE)
+	@echo "Done."
 
 install:
-	@echo Installing...
+	@echo "Rebuilding, if needed..."
+	@$(EXE)
+	@echo "Installing..."
 	@cp -v $(EXE) /usr/bin/

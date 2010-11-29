@@ -50,4 +50,4 @@
 #define NONBOLDGREEN() printf("%c[0;32m", 27);
 #define NONBOLDYELLOW() printf("%c[0;33m", 27);
 #define NONBOLDCYAN() printf("%c[0;36m", 27);
-#define NONBOLDMAGENTA() printf(%c[0;35m", 27);
+#define NONBOLDMAGENTA() printf("%c[0;35m", 27);

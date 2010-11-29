@@ -2,22 +2,20 @@
 
 configure: configure-stamp
 configure-stamp:
-	dh_testdir
-build: build-stamp
-
-build-stamp: config.status
-	dh_testdir
+	@dh_testdir
+build: config.status
+	@dh_testdir
 	$(MAKE)
 	touch $@
 
 clean:
-	make clean
-	dh_clean
+	@make clean
+	@dh_clean
 
 install: build
-	dh_testdir
-	dh_testroot
+	@dh_testdir
+	@dh_testroot
 
-	make install
+	@make install
 
-.PHONY: build clean install
+.PHONY: clean install
