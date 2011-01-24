@@ -135,7 +135,9 @@ int load_file(char *name)
   if ((c != NULL) && (c->inf_title != NULL))
     {
       BOLD();
-      printf("Playing \"%s\" by %s from %s.  Copyright %s %s.\nFilename: %s\n", c->inf_title, c->inf_artist, c->inf_game, c->inf_copy, c->inf_year, name);
+      //printf("Playing \"%s\" by %s from %s.  Copyright %s %s.\nFilename: %s\n", c->inf_title, c->inf_artist, c->inf_game, c->inf_copy, c->inf_year, name);
+      printf("Playing \"%s\" by %s from %s.\n", c->inf_title, c->inf_artist, c->inf_game);
+      printf("Copyright %s %s.\n", c->inf_copy, c->inf_year, name);
       NORMAL();
     }
   else
