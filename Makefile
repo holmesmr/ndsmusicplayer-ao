@@ -26,6 +26,8 @@ LIBS = -lm -lasound
 
 OBJS = main.o oss.o corlett.o
 
+PREFIX := /usr/bin
+
 # actual vio2sf / Desmume code
 OBJS += vio2sf/vio2sf.o vio2sf/desmume/armcpu.o vio2sf/desmume/arm_instructions.o vio2sf/desmume/bios.o vio2sf/desmume/cp15.o 
 OBJS += vio2sf/desmume/FIFO.o vio2sf/desmume/GPU.o vio2sf/desmume/matrix.o vio2sf/desmume/mc.o vio2sf/desmume/MMU.o 
@@ -56,4 +58,4 @@ clean:
 
 install:
 	@echo "Installing..."
-	@cp -v $(EXE) /usr/bin/
+	@cp -v $(EXE) $(PREFIX)
