@@ -1,15 +1,15 @@
 Source: ndsmusicplayer
-Section: games
-Homepage: http://launchpad.net/ndsmusicplayer
-Build-Depends: debhelper (>= 5), libaudio-dev
-Standards-Version: 3.8.4.0
-Maintainer: Jesse N. Richardson <richardson183@bellsouth.net>
-Priority: optional
-
+Section: unknown
+Priority: extra
+Maintainer: Jesse N. Richardson <jesse@unknown>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.8.4
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://git.debian.org/collab-maint/ndsmusicplayer.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/ndsmusicplayer.git;a=summary
 
 Package: ndsmusicplayer
-Architecture: i386 amd64
-Depends: libao-dev, libasound2-dev
-Description: A Nintendo DS Music Player
- This is the Nintendo DS Music Player, it plays mini2sf files. Mini2sf files
- are ripped from the actual NDS ROM's.
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

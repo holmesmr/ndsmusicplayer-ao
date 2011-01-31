@@ -1,5 +1,5 @@
-ndsmusicplayer (2.8) maverick; urgency=low
+ndsmusicplayer (2.8-1) unstable; urgency=low
 
-  * First Packaged Release
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 
- -- Jesse N. Richardson <richardson183@bellsouth.net>  Fri, 28 Jan 2011 20:31:24 -0500
+ -- Jesse N. Richardson <jesse@unknown>  Fri, 28 Jan 2011 20:39:29 -0500
