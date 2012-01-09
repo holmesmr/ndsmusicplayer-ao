@@ -115,6 +115,8 @@ int load_file(char *name)
     {
       RED();
       printf("ERROR: WTF!? I can't read these tags!\n");
+      MAGENTA();
+      printf("File I tried to load: %s\n", name);
       NORMAL();
       return -1;
     }
@@ -124,6 +126,7 @@ int load_file(char *name)
     {
       RED();
       printf("ERROR: WTF!? I can't read this!\n");
+      printf("File I tried to load: %s\n", name);
       NORMAL();
       return -1;
     }
@@ -161,7 +164,7 @@ int main(int argv, char *argc[])
   int song;
 
   MAGENTA();
-  printf("VIO2SF Linux player version 3.0 (vio2sf 0.15)\n\n");
+  printf("VIO2SF Linux player version 3.3 (vio2sf 0.15)\n\n");
   NORMAL();
   // check if an argument was given
   if (argv < 2)
