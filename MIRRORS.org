@@ -1,0 +1,10 @@
+* MIRRORS
+** Here is a list of code mirrors
+*** Github
+**** https://github.com/Flare183/ndsmusicplayer
+*** Launchpad
+**** https://launchpad.net/ndsmusicplayer
+*** BitBucket
+**** https://bitbucket.org/Flare183/ndsmusicplayer/overview
+*** SourceForge
+**** https://sourceforge.net/p/ndsmusicplayer/home/Home/
