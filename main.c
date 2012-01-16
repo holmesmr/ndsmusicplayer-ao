@@ -164,7 +164,10 @@ int main(int argv, char *argc[])
   int song;
 
   MAGENTA();
-  printf("VIO2SF Linux player version 3.3 (vio2sf 0.15)\n\n");
+  //printf("VIO2SF Linux player version 3.3 (vio2sf 0.15)\n\n");
+  printf("NDS Music Player for Linux\n")
+  printf("Version 3.3\n")
+  printf("Using vio2sf 0.15\n")
   NORMAL();
   // check if an argument was given
   if (argv < 2)
