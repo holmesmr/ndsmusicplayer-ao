@@ -21,6 +21,7 @@ CFLAGS += -Ivio2sf -Ivio2sf/desmume -Ivio2sf/zlib -D_strnicmp=strncasecmp
 
 CPPFLAGS = -Wno-deprecated -fno-rtti
 
+# I might change the name of the main program soon
 EXE  = vio2play
 LIBS = -lm -lasound
 

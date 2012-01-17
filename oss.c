@@ -157,8 +157,8 @@ INT16 m1sdr_Init(int sample_rate)
     {
       perror("/dev/dsp");
       RED();
-      printf("ERROR: Not able to stream music to the /dev/dsp device\n");
-      printf("If you are using Ubuntu, then you might need to try out\n");
+      printf("ERROR: Unable to stream music to the /dev/dsp device\n");
+      printf("If you are using Pulseaudio, then you might need to try out\n");
       printf("using padsp then vio2play.\n");
       NORMAL();
 
