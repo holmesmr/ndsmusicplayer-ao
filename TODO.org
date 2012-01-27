@@ -6,8 +6,6 @@ the terminal text to remain blue after the vio2play process has
 recieved the SIGTERM signal.
 ** DONE Add all the colors to the color.h file[fn:1]
 *** DONE Add the Color Green into the main program's announcement/version section
-** Package it for debian/ubuntu
-*** Unable to do this, due to the complex nature of a DEB file.
 * Footnotes
 
 [fn:1] See the bookmarked web page on Firefox for more info.
