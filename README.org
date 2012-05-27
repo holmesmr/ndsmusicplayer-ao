@@ -18,7 +18,7 @@
 * *IMPORTANT! READ THIS!*
 ** If you're using the PulseAudio Sound System
 If you're the PulseAudio Sound System, or if you get errors about /dev/dsp not
-existing, then you need to use padsp in front of the vio2play command.
+existing, then you need to use padsp in front of the ndsmusicplayer command.
 * Footnotes
 
 [fn:1] This is really optional because you'd only need it if you got

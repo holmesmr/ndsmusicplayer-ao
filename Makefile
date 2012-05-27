@@ -22,7 +22,8 @@ CFLAGS += -Ivio2sf -Ivio2sf/desmume -Ivio2sf/zlib -D_strnicmp=strncasecmp
 CPPFLAGS = -Wno-deprecated -fno-rtti
 
 # I might change the name of the main program soon
-EXE  = vio2play
+#EXE  = vio2play
+EXE = ndsmusicplayer
 LIBS = -lm -lasound
 
 OBJS = main.o oss.o corlett.o
@@ -60,3 +61,4 @@ clean:
 install:
 	@echo "Installing..."
 	@cp -v $(EXE) $(PREFIX)
+	@cd /usr/bin/ && ln -s /usr/bin/ndsmusicplayer vio2play
