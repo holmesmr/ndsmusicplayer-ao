@@ -61,4 +61,6 @@ clean:
 install:
 	@echo "Installing..."
 	@cp -v $(EXE) $(PREFIX)
-	@cd /usr/bin/ && ln -s /usr/bin/ndsmusicplayer vio2play
+	@cd /usr/bin/
+	@echo "Linking vio2player (old standard binary) to new ndsmusicplayer (new standard binary)"
+	@ln -s /usr/bin/ndsmusicplayer vio2play
