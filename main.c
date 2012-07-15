@@ -89,7 +89,8 @@ int load_file(char *name)
       return -1;
     }
 
-  // get the length of the file by seeking to the end then reading the current position
+  // get the length of the file by seeking to the end then reading the current
+  // position
   fseek(file, 0, SEEK_END);
   size = ftell(file);
   // reset the pointer
