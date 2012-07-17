@@ -56,7 +56,7 @@ $(EXE): $(OBJS)
 clean:
 	@echo "Cleaning up..."
 	-@rm -f $(OBJS) $(EXE)
-	@rm -f vioplay
+	@rm -f vio2play
 	@echo "Done."
 
 install:
