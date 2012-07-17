@@ -115,7 +115,7 @@ int load_file(char *name)
   if (corlett_decode(buffer, size, &filedata, &file_len, &c) != AO_SUCCESS)
     {
       RED();
-      printf("ERROR: WTF!? I can't read these tags!\n");
+      printf("ERROR: What the..!? I can't read these tags!\n");
       MAGENTA();
       printf("File I tried to load: %s\n", name);
       NORMAL();
@@ -126,7 +126,7 @@ int load_file(char *name)
   if (xsf_start(buffer, size) != XSF_TRUE)
     {
       RED();
-      printf("ERROR: WTF!? I can't read this!\n");
+      printf("ERROR: What the..!? I can't read this!\n");
       printf("File I tried to load: %s\n", name);
       NORMAL();
       return -1;
@@ -167,7 +167,7 @@ int main(int argv, char *argc[])
   MAGENTA();
   //printf("VIO2SF Linux player version 3.3 (vio2sf 0.15)\n\n");
   printf("NDS Music Player for Linux\n");
-  printf("Version 3.5\n");
+  printf("Version 3.6\n");
   printf("Using vio2sf 0.15\n");
   NORMAL();
   // check if an argument was given
