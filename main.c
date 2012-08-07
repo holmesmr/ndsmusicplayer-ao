@@ -143,6 +143,8 @@ int load_file(char *name)
       printf("Playing \"%s\" by %s from %s.\n", c->inf_title, c->inf_artist, c->inf_game);
       printf("Copyright %s %s.\n", c->inf_copy, c->inf_year);
       printf("Filename: %s.\n", name);
+      YELLOW();
+      printf("------------------------------------------------------------\n");
       NORMAL();
     }
   else
