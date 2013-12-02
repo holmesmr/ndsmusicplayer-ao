@@ -250,7 +250,7 @@ INT16 m1sdr_IsThere(void)
 
   if (audiofd == -1)
     {
-      printf("Error accessing soundcard, sound will be disabled\n");
+      printf("Unable to access the system soundcard, quitting...\n");
       hw_present = 0;
       return(0);
     }
