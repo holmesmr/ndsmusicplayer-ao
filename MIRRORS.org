@@ -10,3 +10,5 @@
 *** SourceForge
 **** https://sourceforge.net/p/ndsmusicplayer/home/Home/
 ***** No longer maintained
+*** GoGS
+**** http://negativeflare.zapto.org:3000/negativeflare/ndsmusicplayer
