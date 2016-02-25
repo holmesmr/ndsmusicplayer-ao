@@ -4,7 +4,9 @@
 **** https://github.com/Flare183/ndsmusicplayer
 *** Launchpad
 **** https://launchpad.net/ndsmusicplayer
+***** No longer Maintained
 *** BitBucket
-**** https://bitbucket.org/Flare183/ndsmusicplayer/overview
+**** https://bitbucket.org/negativeflare/ndsmusicplayer
 *** SourceForge
 **** https://sourceforge.net/p/ndsmusicplayer/home/Home/
+***** No longer maintained
