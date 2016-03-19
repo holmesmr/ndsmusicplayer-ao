@@ -1,0 +1,25 @@
+* NDS Music Player Readme
+** How to Build NDS Music Player
+*** Required Packages:
+**** Bzr[fn:1]
+***** If you branched this from the launchpad repo, then that means you've already got bzr
+**** Git
+***** You'll need git if you cloned this from github
+**** libasound2-dev
+**** libao-dev
+**** build-essentials
+***** This is for only Ubuntu
+**** GCC/G++
+*** Compiling it:
+**** All you have to do is run make to compile it
+*** To Install it:
+**** Run this in the ndsmusicplayer's folder
+***** sudo make install
+* *IMPORTANT! READ THIS!*
+** If you're using the PulseAudio Sound System
+If you're the PulseAudio Sound System, or if you get errors about /dev/dsp not
+existing, then you need to use padsp in front of the ndsmusicplayer command.
+* Footnotes
+
+[fn:1] This is really optional because you'd only need it if you got
+it from Launchpad (via bzr branch) or if you want to update it via bzr pull.
