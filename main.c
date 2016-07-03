@@ -17,7 +17,7 @@
 #include "vio2sf/vio2sf.h"
 
 // Color Codes library file
-#include "../color.h"
+#include "color.h"
 
 static uint8 *buffer; // buffer containing 2sf file
 static uint32 size;   // size of buffer
