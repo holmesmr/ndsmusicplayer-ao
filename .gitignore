@@ -1,2 +1,14 @@
-/#color.h#
-/MIRRORS.ORG~
+build/
+cmake-build-*/
+*.o
+*.so
+*.a
+*.lib
+*.dylib
+*.dll
+*.exe
+*.pdb
+*.dSYM
+.DS_Store
+*~
+.idea/
