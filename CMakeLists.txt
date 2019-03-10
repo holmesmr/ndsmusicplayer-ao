@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 project(ndsmusicplayer)
 
-SET(CMAKE_MODULE_PATH "${vio2play_SOURCE_DIR}/cmake")
+SET(CMAKE_MODULE_PATH "${ndsmusicplayer_SOURCE_DIR}/cmake")
 
 Include(TestBigEndian)
 Include(FindLibAO)
@@ -28,7 +28,8 @@ Add_Compile_Definitions(_strnicmp=strncasecmp)
 
 Link_Directories(${LIBWAV_LIBRARY_DIRS})
 Include_Directories(
-    ${vio2play_SOURCE_DIR}/vio2sf ${vio2play_SOURCE_DIR}/vio2sf/zlib ${vio2play_SOURCE_DIR}/vio2sf/desmume
+    ${ndsmusicplayer_SOURCE_DIR}/vio2sf ${ndsmusicplayer_SOURCE_DIR}/vio2sf/zlib 
+    ${ndsmusicplayer_SOURCE_DIR}/vio2sf/desmume
     ${LIBAO_INCLUDE_DIRS}
 )
 
@@ -41,4 +42,4 @@ Add_Executable(ndsmusicplayer
     vio2sf/zlib/inftrees.c vio2sf/zlib/uncompr.c vio2sf/zlib/zutil.c
 )
 
-Target_Link_Libraries(ndsmusicplayer PUBLIC ${AUDIO_DRIVER_LIBRARIES} ${MATH_LIBRARIES} ${LIBAO_LIBRARIES})
+Target_Link_Libraries(ndsmusicplayer PUBLIC ${MATH_LIBRARIES} ${LIBAO_LIBRARIES})
