@@ -1,4 +1,4 @@
-FIND_PATH(LIBAO_INCLUDE_DIR ao.h /usr/include/ao /usr/local/include/ao)
+FIND_PATH(LIBAO_INCLUDE_DIR ao/ao.h /usr/include /usr/local/include)
 
 FIND_LIBRARY(LIBAO_LIBRARIES NAMES ao PATH /usr/lib /usr/local/lib)
 

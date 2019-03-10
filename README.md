@@ -1,7 +1,7 @@
 ndsmusicplayer
 ==============
 
-modified fork of ndsmusicplayer/vio2play that uses libao so you don't have to mess
+Modified fork of ndsmusicplayer/vio2play that uses libao so you don't have to mess
 around with `aoss` or `padsp` (and use them on platforms where OSS doesn't
 exist at all). Additionally uses CMake because I decided to.
 
@@ -13,3 +13,8 @@ By way of being a derivative work of DeSmuME this program is licensed under GPLv
 In addition, the FindLibAO CMake module was cribbed from 
 [the iola non-linear video editor](https://github.com/dahnielson/iola) which is
 also GPLv2 licensed.
+
+Please note this is a quick hack and you're on your own if it doesn't work.
+
+Tested to work on Linux x86_64 and macOS. Probably won't work on Windows as it
+still uses some POSIX calls.

@@ -26,11 +26,10 @@ endif()
 
 Add_Compile_Definitions(_strnicmp=strncasecmp)
 
-Link_Directories(${LIBWAV_LIBRARY_DIRS})
 Include_Directories(
     ${ndsmusicplayer_SOURCE_DIR}/vio2sf ${ndsmusicplayer_SOURCE_DIR}/vio2sf/zlib 
     ${ndsmusicplayer_SOURCE_DIR}/vio2sf/desmume
-    ${LIBAO_INCLUDE_DIRS}
+    ${LIBAO_INCLUDE_DIR}
 )
 
 Add_Executable(ndsmusicplayer

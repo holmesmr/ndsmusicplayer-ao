@@ -1,7 +1,7 @@
 #ifndef _LIBAO_H_
 #define _LIBAO_H_
 
-#include "ao/ao.h"
+#include <ao/ao.h>
 #include <stdint.h>
 
 extern ao_device* audiodev;
