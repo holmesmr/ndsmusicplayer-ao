@@ -7,6 +7,9 @@
 
 // corlett.h
 
+#ifndef _CORLETT_H_
+#define _CORLETT_H_
+
 #include "ao.h"
 
 #define MAX_UNKNOWN_TAGS			32
@@ -35,3 +38,4 @@ typedef struct {
 int corlett_decode(UINT8 *input, UINT32 input_len, UINT8 **output, UINT64 *size, corlett_t **c);
 UINT32 psfTimeToMS(char *str);
 
+#endif

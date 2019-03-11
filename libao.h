@@ -27,4 +27,6 @@ void m1sdr_Pause(int);
 void m1sdr_SetNoWait(int nw);
 short *m1sdr_GetSamples(void);
 int m1sdr_GetPlayTime(void);
+
+
 #endif
